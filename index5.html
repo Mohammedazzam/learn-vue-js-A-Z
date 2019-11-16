@@ -1,0 +1,77 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <dvi id='elzero-app'>
+        <h1>Welcome To Vue Cource</h1>
+        <p>Welcome {{'Mr '+ name}} We Are Happy To See You</p>
+        <p>your age Is: {{age + ' years'}} </p>
+        <p>first skils is: {{skills[0]}} </p>
+        <p>you are Is: {{isSubiscribe? 'subscribed': 'Not Subscribed'}}</p>
+
+
+    </dvi> 
+    <script src="js/vue.js"></script>
+    <script>
+      var vm =  new Vue({
+            el:'#elzero-app',
+            data:{
+                name:'mohammed',
+                age:36,
+                skills:['html','css','js'],
+                isSubiscribe:true
+            }
+        })
+    
+    </script>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+  </head>
+  <body>
+    <dvi id="elzero-app">
+      <h1>Welcome To Vue Cource</h1>
+      <p>Welcome {{ "Mr " + name }} We Are Happy To See You</p>
+      <p>your age Is: {{ age + " years" }}</p>
+      <p>first skils is: {{ skills[0] }}</p>
+      <p>you are Is: {{ isSubiscribe ? "subscribed" : "Not Subscribed" }}</p>
+      <p>Your Firs Test Name Is:{{ CompleatedTests[1].testName }}</p>
+      <p>Your Firs Test Result Is:{{ CompleatedTests[1].testResult }}</p>
+    </dvi>
+    <script src="js/vue.js"></script>
+    <script>
+      var vm = new Vue({
+        el: "#elzero-app",
+        data: {
+          name: "mohammed",
+          age: 36,
+          skills: ["html", "css", "js"],
+          isSubiscribe: true,
+
+          CompleatedTests: [
+            {
+              testName: "First Test",
+              testResult: "80%"
+            },
+            {
+              testName: "second Test",
+              testResult: "90%"
+            },
+            {
+              testName: "third Test",
+              testResult: "100%"
+            }
+          ]
+        }
+      });
+    </script>
+  </body>
+</html>
