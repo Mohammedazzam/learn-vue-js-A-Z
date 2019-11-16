@@ -1,0 +1,253 @@
+
+<!--سيطبع 72-->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <div id='elzero-app'>
+        <h1>Welcome To Vue Course </h1>
+        <p>{{age*2}}</p>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.6/dist/vue.js"></script>
+    <script>
+
+      var vm =  new Vue({
+            el:'#elzero-app',
+            data:{
+                age:36,
+                message:'Elzero Web School'
+            },
+            methods: {
+                
+            },
+
+            computed: {
+                
+            },
+            
+        })
+    
+    </script>
+</body>
+</html> -->
+
+
+
+<!-- runسيطبع نفس النتيجة السابقة 72 وسيطبع في الكونسول كلمة-->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <div id='elzero-app'>
+        <h1>Welcome To Vue Course </h1>
+        <p>{{calcAge()}}</p>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.6/dist/vue.js"></script>
+    <script>
+
+      var vm =  new Vue({
+            el:'#elzero-app',
+            data:{
+                age:36,
+                message:'Elzero Web School'
+            },
+            methods: {
+                calcAge:function(){
+                    console.log('Run')
+                    return this.age * 2;
+                }
+            },
+
+            computed: {
+                
+            },
+            
+        })
+    
+    </script>
+</body>
+</html> -->
+
+
+<!--مرات 4 run راح يكيش المطلوب وسيطبع كلمة -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <div id='elzero-app'>
+        <h1>Welcome To Vue Course </h1>
+        <p>{{calcAge()}}</p>
+        <p>{{calcAge()}}</p>
+        <p>{{calcAge()}}</p>
+        <p>{{calcAge()}}</p>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.6/dist/vue.js"></script>
+    <script>
+
+      var vm =  new Vue({
+            el:'#elzero-app',
+            data:{
+                age:36,
+                message:'Elzero Web School'
+            },
+            methods: {
+                calcAge:function(){
+                    console.log('Run')
+                    return this.age * 2;
+                }
+            },
+
+            computed: {
+                
+            },
+            
+        })
+    
+    </script>
+</body>
+</html> -->
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <div id='elzero-app'>
+        <h1>Welcome To Vue Course </h1>
+        <p>{{calcAge}}</p>
+        <p>{{calcAge}}</p>
+        <p>{{calcAge}}</p>
+        <p>{{calcAge}}</p>
+        <p>{{age}}</p>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.6/dist/vue.js"></script>
+    <script>
+
+      var vm =  new Vue({
+            el:'#elzero-app',
+            data:{
+                age:36,
+                message:'Elzero Web School'
+            },
+            methods: {
+
+            },
+
+            computed: {
+                calcAge:function(){
+                    console.log('Run')
+                    return this.age * 2;
+                }
+            },
+            
+        })
+    
+    </script>
+</body>
+</html>  -->
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <div id='elzero-app'>
+        <h1>Welcome To Vue Course </h1>
+        <p>{{reversedMessage }}</p>
+        <p>{{reversedMessage }}</p>
+        <p>{{reversedMessage }}</p>
+        <p>{{reversedMessage }}</p>
+        <p>{{age}}</p>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.6/dist/vue.js"></script>
+    <script>
+
+      var vm =  new Vue({
+            el:'#elzero-app',
+            data:{
+                age:36,
+                message:'Elzero Web School'
+            },
+            methods: {
+
+            },
+
+            computed: {
+                reversedMessage:function(){
+                    console.log('Run');
+                    return this.message.split('').reverse().join('')
+                }
+            },
+            
+        })
+    
+    </script>
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <div id='elzero-app'>
+        <h1>Welcome To Vue Course </h1>
+        <p>{{reversedMessage() }}</p>
+        <p>{{reversedMessage() }}</p>
+        <p>{{reversedMessage() }}</p>
+        <p>{{reversedMessage() }}</p>
+        <p>{{age}}</p>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.6/dist/vue.js"></script>
+    <script>
+
+      var vm =  new Vue({
+            el:'#elzero-app',
+            data:{
+                age:36,
+                message:'Elzero Web School'
+            },
+            methods: {
+                reversedMessage:function(){
+                    console.log('Run');
+                    return this.message.split('').reverse().join('')
+                }
+            },
+
+            computed: {
+               
+            },
+            
+        })
+    
+    </script>
+</body>
+</html>
+
+
