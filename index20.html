@@ -1,0 +1,254 @@
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <div id='elzero-app'>
+        <h1>Welcome To Vue Course </h1>
+
+        <label>Hour</label>
+        <input type="text" v-model='hour'>
+
+        <label>Minuts</label>
+        <input type="text" v-model='minut'>
+
+        <label>Second</label>
+        <input type="text" v-model='second'>
+
+
+        
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.6/dist/vue.js"></script>
+    <script>
+
+      var vm =  new Vue({
+            el:'#elzero-app',
+            data:{
+                hour:0,
+                minut:0,
+                second:0
+                
+            },
+            methods: {
+                
+            },
+
+            computed: {
+                
+            },
+            
+            watch: {
+             hour:function(v){
+                this.minut = v * 60
+                console.log('Run Hour')
+             },
+
+
+            },
+            
+        })
+    
+    </script>
+</body>
+</html> -->
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <div id='elzero-app'>
+        <h1>Welcome To Vue Course </h1>
+
+        <label>Hour</label>
+        <input type="text" v-model='hour'>
+
+        <label>Minuts</label>
+        <input type="text" v-model='minut'>
+
+        <label>Second</label>
+        <input type="text" v-model='second'>
+
+
+        
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.6/dist/vue.js"></script>
+    <script>
+
+      var vm =  new Vue({
+            el:'#elzero-app',
+            data:{
+                hour:0,
+                minut:0,
+                second:0
+                
+            },
+            methods: {
+                
+            },
+
+            computed: {
+                
+            },
+            
+            watch: {
+             hour:function(v){
+                this.minut = v * 60
+                console.log('Run Hour')
+             },
+
+             minut:function(v){
+                this.hour = v / 60
+                console.log('Run Minut')
+             }
+
+            },
+            
+        })
+    
+    </script>
+</body>
+</html> -->
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <div id='elzero-app'>
+        <h1>Welcome To Vue Course </h1>
+
+        <label>Hour</label>
+        <input type="text" v-model='hour'>
+
+        <label>Minuts</label>
+        <input type="text" v-model='minut'>
+
+        <label>Second</label>
+        <input type="text" v-model='second'>
+
+
+        
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.6/dist/vue.js"></script>
+    <script>
+
+      var vm =  new Vue({
+            el:'#elzero-app',
+            data:{
+                hour:0,
+                minut:0,
+                second:0
+                
+            },
+            methods: {
+                
+            },
+
+            computed: {
+                
+            },
+            
+            watch: {
+             hour:function(v){
+                this.minut = v * 60
+                console.log('Run Hour')
+             },
+
+             minut:function(v){
+                this.hour = v / 60
+                this.second = v * 60
+                console.log('Run Minut')
+             },
+
+
+            },
+            
+        })
+    
+    </script>
+</body>
+</html> -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <div id='elzero-app'>
+        <h1>Welcome To Vue Course </h1>
+
+        <label>Hour</label>
+        <input type="text" v-model='hour'>
+
+        <label>Minuts</label>
+        <input type="text" v-model='minut'>
+
+        <label>Second</label>
+        <input type="text" v-model='second'>
+
+
+        
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.6/dist/vue.js"></script>
+    <script>
+
+      var vm =  new Vue({
+            el:'#elzero-app',
+            data:{
+                hour:0,
+                minut:0,
+                second:0
+                
+            },
+            methods: {
+                
+            },
+
+            computed: {
+                
+            },
+            
+            watch: {
+             hour:function(v){
+                this.minut = v * 60
+                console.log('Run Hour')
+             },
+
+             minut:function(v){
+                this.hour = v / 60
+                this.second = v * 60
+                console.log('Run Minut')
+             },
+
+             second:function(v){
+                this.minut = v / 60
+                console.log('Run Second')
+             }
+
+
+            },
+            
+        })
+    
+    </script>
+</body>
+</html>
+
