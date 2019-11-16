@@ -1,0 +1,60 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <div id='elzero-app'>
+        <form class="" action="" method="POST">
+            <input type="text" name="" :value='name'>
+        </form>
+        your Nmae Is {{name}}
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.6/dist/vue.js"></script>
+    <script>
+      var vm =  new Vue({
+            el:'#elzero-app',
+            data:{
+                name:'mohammed',
+                
+            }
+
+        })
+    
+    </script>
+</body>
+</html> -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <div id='elzero-app'>
+        <form class="" action="" method="POST">
+                <input type="text" name="" :value='source' placeholder="Using v-bind">
+                <input type="text" name="" v-model='source' placeholder="Using v-model">
+        </form>
+        your Nmae Is {{source}}
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.6/dist/vue.js"></script>
+    <script>
+      var vm =  new Vue({
+            el:'#elzero-app',
+            data:{
+                source:'mohammed',
+                
+            }
+
+        })
+    
+    </script>
+</body>
+</html>
