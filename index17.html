@@ -1,0 +1,347 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <div id='elzero-app'>
+        <h1>Welcome To Vue Course </h1>
+        {{firstNmae + ' ' +  lastName}}
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.6/dist/vue.js"></script>
+    <script>
+
+      var vm =  new Vue({
+            el:'#elzero-app',
+            data:{
+                age:36,
+                message:'Elzero Web School',
+                firstNmae:'Mohammed',
+                lastName:'Azzam'
+            },
+            methods: {
+               
+            },
+
+            computed: {
+               
+            },
+            
+        })
+    
+    </script>
+</body>
+</html> -->
+
+
+<!--run سيطبع الإسم ومعه في الكونسول كلمة   -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <div id='elzero-app'>
+        <h1>Welcome To Vue Course </h1>
+        {{fullNmae()}}
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.6/dist/vue.js"></script>
+    <script>
+
+      var vm =  new Vue({
+            el:'#elzero-app',
+            data:{
+                age:36,
+                message:'Elzero Web School',
+                firstNmae:'Mohammed',
+                lastName:'Azzam'
+            },
+            methods: {
+               fullNmae:function(){
+                   console.log('Run')
+                   return this.firstNmae + ' ' + this.lastName
+
+               }
+            },
+
+            computed: {
+               
+            },
+            
+        })
+    
+    </script>
+</body>
+</html> -->
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <div id='elzero-app'>
+        <h1>Welcome To Vue Course </h1>
+       <p>{{fullNmae()}}</p> 
+       <p>{{fullNmae()}}</p> 
+       <p>{{fullNmae()}}</p> 
+       <p>{{fullNmae()}}</p> 
+       <p>{{age}}</p>
+
+     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.6/dist/vue.js"></script>
+    <script>
+
+      var vm =  new Vue({
+            el:'#elzero-app',
+            data:{
+                age:36,
+                message:'Elzero Web School',
+                firstNmae:'Mohammed',
+                lastName:'Azzam'
+            },
+            methods: {
+               fullNmae: function(){
+                   console.log('Run')
+                   return this.firstNmae + ' ' + this.lastName
+               }
+            },
+
+            computed: {
+               
+            },
+            
+        })
+    
+    </script>
+</body>
+</html> -->
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <div id='elzero-app'>
+        <h1>Welcome To Vue Course </h1>
+       <p>{{fullNmae}}</p> 
+       <p>{{fullNmae}}</p> 
+       <p>{{fullNmae}}</p> 
+       <p>{{fullNmae}}</p> 
+       <p>{{age}}</p>
+
+     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.6/dist/vue.js"></script>
+    <script>
+
+      var vm =  new Vue({
+            el:'#elzero-app',
+            data:{
+                age:36,
+                message:'Elzero Web School',
+                firstNmae:'Mohammed',
+                lastName:'Azzam'
+            },
+            methods: {
+
+            },
+
+            computed: {
+                fullNmae: function(){
+                   console.log('Run')
+                   return this.firstNmae + ' ' + this.lastName
+               }  
+            },
+            
+        })
+    
+    </script>
+</body>
+</html> -->
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <div id='elzero-app'>
+        <h1>Welcome To Vue Course </h1>
+       <p>{{fullNmae}}</p> 
+       <p>{{fullNmae}}</p> 
+       <p>{{fullNmae}}</p> 
+       <p>{{fullNmae}}</p> 
+       <p>{{age}}</p>
+
+     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.6/dist/vue.js"></script>
+    <script>
+
+      var vm =  new Vue({
+            el:'#elzero-app',
+            data:{
+                age:36,
+                message:'Elzero Web School',
+                firstNmae:'Mohammed',
+                lastName:'Azzam'
+            },
+            methods: {
+
+            },
+
+            computed: {
+                fullNmae: function(){
+
+                    // return this.firstNmae + ' ' + this.lastName
+                //ES6 طريقة ال 
+                return `${this.firstNmae} ${this.lastName}`
+               }  
+            },
+            
+        })
+    
+    </script>
+</body>
+</html> -->
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <div id='elzero-app'>
+        <h1>Welcome To Vue Course </h1>
+       <label>Search For Peograming Languages:</label>
+       <input type="text" v-model="findLanguge">
+       <ul>
+           <li v-for="lang in filterLanguges">
+                {{lang}}
+           </li>
+       </ul>
+     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.6/dist/vue.js"></script>
+    <script>
+
+      var vm =  new Vue({
+            el:'#elzero-app',
+            data:{
+                age:36,
+                message:'Elzero Web School',
+                firstNmae:'Mohammed',
+                lastName:'Azzam',
+                findLanguge:'',
+                Languages:[
+                    'html',
+                    'css',
+                    'php',
+                    'js',
+                    'musql',
+                    'java',
+                    'C#',
+                    'Sass',
+                ],
+            },
+            methods: {
+
+            },
+
+            computed: {
+                filterLanguges:function(){
+                    var filtering = new RegExp(this.findLanguge,'i');
+                    return this.Languages.filter(function(el){
+                        return el.match(filtering);
+                    })
+                }
+            },
+            
+        })
+    
+    </script>
+</body>
+</html> -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <div id='elzero-app'>
+        <h1>Welcome To Vue Course </h1>
+       <label>Search For Peograming Languages:</label>
+       <input type="text" v-model="findLanguge">
+       <ul>
+           <li v-for="lang in filterLanguges">
+                {{lang}}
+           </li>
+       </ul>
+     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.6/dist/vue.js"></script>
+    <script>
+
+      var vm =  new Vue({
+            el:'#elzero-app',
+            data:{
+                age:36,
+                message:'Elzero Web School',
+                firstNmae:'Mohammed',
+                lastName:'Azzam',
+                findLanguge:'',
+                Languages:[
+                    'html',
+                    'css',
+                    'php',
+                    'js',
+                    'musql',
+                    'java',
+                    'C#',
+                    'Sass',
+                ],
+            },
+            methods: {
+
+            },
+
+            computed: {
+                filterLanguges:function(){
+                    var filtering = new RegExp(this.findLanguge,'i');
+                    // return this.Languages.filter(function(el){
+                    //     return el.match(filtering);
+                    // });
+
+//ES6هذه الطريقة بال 
+                    return this.Languages.filter(el =>el.match(filtering))
+                }
+            },
+            
+        })
+    
+    </script>
+</body>
+</html>
