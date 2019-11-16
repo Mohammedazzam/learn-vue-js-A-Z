@@ -1,0 +1,270 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+  </head>
+  <body>
+    <dvi id="elzero-app">
+      <h1>Welcome To Vue Cource</h1>
+      <p>Welcome {{ "Mr " + name }} We Are Happy To See You</p>
+      <p>your age Is: {{ age + " years" }}</p>
+      <p>first skils is: {{ skills[0] }}</p>
+      <p>you are Is: {{ isSubiscribe ? "subscribed" : "Not Subscribed" }}</p>
+      <p>Your Firs Test Name Is:{{ CompleatedTests[1].testName }}</p>
+      <p>Your Firs Test Result Is:{{ CompleatedTests[1].testResult }}</p>
+      <p>{{saySomething()}}</p>
+    </dvi>
+    <script src="js/vue.js"></script>
+    <script>
+      var vm = new Vue({
+        el: "#elzero-app",
+        data: {
+          name: "mohammed",
+          age: 36,
+          skills: ["html", "css", "js"],
+          isSubiscribe: true,
+
+          CompleatedTests: [
+            {
+              testName: "First Test",
+              testResult: "80%"
+            },
+            {
+              testName: "second Test",
+              testResult: "90%"
+            },
+            {
+              testName: "third Test",
+              testResult: "100%"
+            }
+          ]
+        },
+        methods: {
+            saySomething :function(){
+                return 'Hello From Vue.js Methods';
+            }
+        },
+      });
+    </script>
+  </body>
+</html> -->
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+  </head>
+  <body>
+    <dvi id="elzero-app">
+      <h1>Welcome To Vue Cource</h1>
+      <p>Welcome {{ "Mr " + name }} We Are Happy To See You</p>
+      <p>your age Is: {{ age + " years" }}</p>
+      <p>first skils is: {{ skills[0] }}</p>
+      <p>you are Is: {{ isSubiscribe ? "subscribed" : "Not Subscribed" }}</p>
+      <p>Your Firs Test Name Is:{{ CompleatedTests[1].testName }}</p>
+      <p>Your Firs Test Result Is:{{ CompleatedTests[1].testResult }}</p>
+      <p>{{sayMyName()}}</p>
+    </dvi>
+    <script src="js/vue.js"></script>
+    <script>
+      var vm = new Vue({
+        el: "#elzero-app",
+        data: {
+          name: "mohammed",
+          age: 36,
+          skills: ["html", "css", "js"],
+          isSubiscribe: true,
+
+          CompleatedTests: [
+            {
+              testName: "First Test",
+              testResult: "80%"
+            },
+            {
+              testName: "second Test",
+              testResult: "90%"
+            },
+            {
+              testName: "third Test",
+              testResult: "100%"
+            }
+          ]
+        },
+        methods: {
+            sayMyName :function(){
+                return this.name;
+            }
+        },
+      });
+    </script>
+  </body>
+</html> -->
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+  </head>
+  <body>
+    <dvi id="elzero-app">
+      <h1>Welcome To Vue Cource</h1>
+      <p>Welcome {{ "Mr " + name }} We Are Happy To See You</p>
+      <p>your age Is: {{ age + " years" }}</p>
+      <p>first skils is: {{ skills[0] }}</p>
+      <p>you are Is: {{ isSubiscribe ? "subscribed" : "Not Subscribed" }}</p>
+      <p>Your Firs Test Name Is:{{ CompleatedTests[1].testName }}</p>
+      <p>Your Firs Test Result Is:{{ CompleatedTests[1].testResult }}</p>
+      <p>{{sayMyName()}}</p>
+    </dvi>
+    <script src="js/vue.js"></script>
+    <script>
+      var vm = new Vue({
+        el: "#elzero-app",
+        data: {
+          name: "mohammed",
+          age: 36,
+          skills: ["html", "css", "js"],
+          isSubiscribe: true,
+
+          CompleatedTests: [
+            {
+              testName: "First Test",
+              testResult: "80%"
+            },
+            {
+              testName: "second Test",
+              testResult: "90%"
+            },
+            {
+              testName: "third Test",
+              testResult: "100%"
+            }
+          ]
+        },
+        methods: {
+            sayMyName :function(){
+                return this.skills[2];
+            }
+        },
+      });
+    </script>
+  </body>
+</html> -->
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+  </head>
+  <body>
+    <dvi id="elzero-app">
+      <h1>Welcome To Vue Cource</h1>
+      <p>Welcome {{ "Mr " + name }} We Are Happy To See You</p>
+      <p>your age Is: {{ age + " years" }}</p>
+      <p>first skils is: {{ skills[0] }}</p>
+      <p>you are Is: {{ isSubiscribe ? "subscribed" : "Not Subscribed" }}</p>
+      <p>Your Firs Test Name Is:{{ CompleatedTests[1].testName }}</p>
+      <p>Your Firs Test Result Is:{{ CompleatedTests[1].testResult }}</p>
+      <p>{{YourAgeInDay()}}</p>
+    </dvi>
+    <script src="js/vue.js"></script>
+    <script>
+      var vm = new Vue({
+        el: "#elzero-app",
+        data: {
+          name: "mohammed",
+          age: 36,
+          skills: ["html", "css", "js"],
+          isSubiscribe: true,
+
+          CompleatedTests: [
+            {
+              testName: "First Test",
+              testResult: "80%"
+            },
+            {
+              testName: "second Test",
+              testResult: "90%"
+            },
+            {
+              testName: "third Test",
+              testResult: "100%"
+            }
+          ]
+        },
+        methods: {
+            YourAgeInDay :function(){
+                return 'Yor Age Is ' + this.age * 365;
+            }
+        },
+      });
+    </script>
+  </body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+  </head>
+  <body>
+    <dvi id="elzero-app">
+      <h1>Welcome To Vue Cource</h1>
+      <p>Welcome {{ "Mr " + name }} We Are Happy To See You</p>
+      <p>your age Is: {{ age + " years" }}</p>
+      <p>first skils is: {{ skills[0] }}</p>
+      <p>you are Is: {{ isSubiscribe ? "subscribed" : "Not Subscribed" }}</p>
+      <p>Your Firs Test Name Is:{{ CompleatedTests[1].testName }}</p>
+      <p>Your Firs Test Result Is:{{ CompleatedTests[1].testResult }}</p>
+      <p>{{date}}</p>
+      <p>{{YourAgeInDay()}}</p>
+      <button @click="showNewDate">Show New Date</button>
+    </dvi>
+    <script src="js/vue.js"></script>
+    <script>
+      var vm = new Vue({
+        el: "#elzero-app",
+        data: {
+          name: "mohammed",
+          age: 36,
+          date: 'Today',
+          skills: ["html", "css", "js"],
+          isSubiscribe: true,
+
+          CompleatedTests: [
+            {
+              testName: "First Test",
+              testResult: "80%"
+            },
+            {
+              testName: "second Test",
+              testResult: "90%"
+            },
+            {
+              testName: "third Test",
+              testResult: "100%"
+            }
+          ]
+        },
+        methods: {
+            YourAgeInDay :function(){
+                return 'Yor Age Is ' + this.age * 365;
+            },
+            showNewDate:function(){
+                this.date = Date();
+            }
+        },
+      });
+    </script>
+  </body>
+</html>
