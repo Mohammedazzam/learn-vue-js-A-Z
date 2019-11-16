@@ -1,0 +1,178 @@
+<!--طريقة ال cabab Case-->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <div id='elzero-app'>
+        <h1>Welcome To Vue Course </h1>
+            <app-artical ></app-artical>
+     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.6/dist/vue.js"></script>
+    <script>
+
+        Vue.component('app-artical',{
+            data:function(){
+                return{
+                    count:0
+            }
+        },
+        template:'<p>Test</p>'
+        })
+
+      var vm =  new Vue({
+            el:'#elzero-app',
+            data:{
+        
+            }
+        })
+    
+    </script>
+</body>
+</html> -->
+
+
+
+<!--طريقة ال pascal case-->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <div id='elzero-app'>
+        <h1>Welcome To Vue Course </h1>
+            <app-artical ></app-artical>
+     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.6/dist/vue.js"></script>
+    <script>
+
+        Vue.component('AppArtical',{
+            data:function(){
+                return{
+                    count:0
+            }
+        },
+        template:'<p>Test</p>'
+        })
+
+      var vm =  new Vue({
+            el:'#elzero-app',
+            data:{
+        
+            }
+        })
+    
+    </script>
+</body>
+</html> -->
+
+
+
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <div id='elzero-app'>
+        <h1>Welcome To Vue Course </h1>
+        <app-artical ></app-artical>
+        <app-artical-item ></app-artical-item>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.6/dist/vue.js"></script>
+    <script>
+
+        var AppArtical = {
+            data:function(){
+                return{
+                    count:0
+            }
+        },
+        template:'<p>Test</p>'
+        }
+
+        var AppArticalItem = {
+            data:function(){
+                return{
+                    count:0
+            }
+        },
+        template:'<p>Item</p>'
+        }
+
+
+      var vm =  new Vue({
+            el:'#elzero-app',
+            data:{
+        
+            },
+            components:{
+               'app-artical' :AppArtical
+            }
+        })
+    
+    </script>
+</body>
+</html> -->
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <div id='elzero-app'>
+        <h1>Welcome To Vue Course </h1>
+        <app-artical ></app-artical>
+        <app-artical-item ></app-artical-item>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.6/dist/vue.js"></script>
+    <script>
+
+        var AppArtical = {
+            data:function(){
+                return{
+                    count:0
+            }
+        },
+        template:'<p>Test</p>'
+        }
+
+        var AppArticalItem = {
+            data:function(){
+                return{
+                    count:0
+            }
+        },
+        template:'<p>Item</p>'
+        }
+
+
+      var vm =  new Vue({
+            el:'#elzero-app',
+            data:{
+        
+            },
+            components:{
+                'app-artical' :AppArtical,
+                'app-artical-item' :AppArticalItem
+            }
+        })
+    
+    </script>
+</body>
+</html>
