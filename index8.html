@@ -1,0 +1,259 @@
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <dvi id='elzero-app'>
+        <h1>Your Cources </h1>
+        <ul>
+            <li v-for="slill in skills">
+                {{slill}}
+            </li>
+        </ul>
+    </dvi>
+    <script src="js/vue.js"></script>
+    <script>
+      var vm =  new Vue({
+            el:'#elzero-app',
+            data:{
+                skills:['html','css','js'],
+            }
+
+        })
+    
+    </script>
+</body>
+</html> -->
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <dvi id='elzero-app'>
+        <ul>
+            <li v-for="skill in skills">
+                {{skill}}
+            </li>
+        </ul>
+
+
+        <ul>
+            <li v-for="(skill, index) in skills">
+                    {{index}}=>{{skill}}
+            </li>
+        </ul>
+
+        
+    </dvi>
+    <script src="js/vue.js"></script>
+    <script>
+      var vm =  new Vue({
+            el:'#elzero-app',
+            data:{
+                skills:['html','css','js'],
+            }
+
+        })
+    
+    </script>
+</body>
+</html> -->
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <dvi id='elzero-app'>
+        <ul>
+            <li v-for="skill in skills">
+                {{skill}}
+            </li>
+        </ul>
+
+
+        <ul>
+            <li v-for="(skill, index) in skills">
+                    {{index}}=>{{skill}}
+            </li>
+        </ul>
+
+        <ul>
+                <li v-for="test in CompleatedTests">
+                        {{test.testName}}
+                </li>
+            </ul>
+
+    </dvi>
+    <script src="js/vue.js"></script>
+    <script>
+      var vm =  new Vue({
+            el:'#elzero-app',
+            data:{
+                skills:['html','css','js'],
+
+                CompleatedTests:[
+                {
+                testName:'First Test',
+                testResult:'80%'
+            },
+            {
+                testName:'second Test',
+                testResult:'90%'
+            },
+            {
+                testName:'third Test',
+                testResult:'100%'
+            }
+            
+            ]
+            }
+
+        })
+    
+    </script>
+</body>
+</html> -->
+
+
+
+
+ <!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <dvi id='elzero-app'>
+        <ul>
+            <li v-for="skill in skills">
+                {{skill}}
+            </li>
+        </ul>
+
+
+        <ul>
+            <li v-for="(skill, index) in skills">
+                    {{index}}=>{{skill}}
+            </li>
+        </ul>
+
+        <ul>
+                <li v-for="test in CompleatedTests">
+                        {{test.testName}} | {{test.testResult}}
+                </li>
+            </ul>
+
+    </dvi>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.6/dist/vue.js"></script>
+    <script>
+      var vm =  new Vue({
+            el:'#elzero-app',
+            data:{
+                skills:['html','css','js'],
+
+                CompleatedTests:[
+                {
+                testName:'First Test',
+                testResult:'80%'
+            },
+            {
+                testName:'second Test',
+                testResult:'90%'
+            },
+            {
+                testName:'third Test',
+                testResult:'100%'
+            }
+            
+            ]
+            }
+
+        })
+    
+    </script>
+</body>
+</html> -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <dvi id='elzero-app'>
+        <ul>
+            <li v-for="skill in skills">
+                {{skill}}
+            </li>
+        </ul>
+
+
+        <ul>
+            <li v-for="(skill, index) in skills">
+                    {{index}}=>{{skill}}
+            </li>
+        </ul>
+
+        <ul>
+            <li v-for="test in CompleatedTests">
+                    {{test.testName}} | {{test.testResult}}
+            </li>
+        </ul>
+
+
+        <ul>
+            <li v-for="(test, index) in CompleatedTests">
+                   {{index}} => {{test.testName}} | {{test.testResult}}
+            </li>
+        </ul>
+
+
+    </dvi>
+    <script src="js/vue.js"></script>
+    <script>
+      var vm =  new Vue({
+            el:'#elzero-app',
+            data:{
+                skills:['html','css','js'],
+
+                CompleatedTests:[
+                {
+                testName:'First Test',
+                testResult:'80%'
+            },
+            {
+                testName:'second Test',
+                testResult:'90%'
+            },
+            {
+                testName:'third Test',
+                testResult:'100%'
+            }
+            
+            ]
+            }
+
+        })
+    
+    </script>
+</body>
+</html>
