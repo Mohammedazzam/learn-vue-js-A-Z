@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="elzero-app">
+      <h1>Welcome The Cource Vue JS</h1>
+      <p>Hello {{ name }} We Are Study</p>
+      <p>Hello {{ name.toUpperCase() }} We Are Study</p>
+      <p>Hello {{ name.length }} We Are Study</p>
+      <p>Hello {{ name.length > 4 ?name :'Name is To Short' }} We Are Study</p>
+      <p>Hello {{ "MR " + name }} We Are Study</p>
+
+    </div>
+
+    <script src="js/vue.js"></script>
+    <script>
+      var vm = new Vue({
+        el: "#elzero-app",
+        data: {
+          name: "Mohammed"
+        }
+      });
+    </script>
+  </body>
+</html>
