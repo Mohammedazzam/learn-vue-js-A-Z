@@ -1,0 +1,332 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <div id='elzero-app'>
+        <h1>Welcome To Vue Course </h1>
+        <label>Write Your UserName</label>
+        <input type="text" v-model='username' >
+
+        <p>{{validateusername}}</p>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.6/dist/vue.js"></script>
+    <script>
+
+      var vm =  new Vue({
+            el:'#elzero-app',
+            data:{
+                username:'',
+
+            },
+            methods: {
+            
+            },
+
+            computed: {
+               validateusername:function(){
+                   if(!this.username){
+                       return 'User Name Cant Be Empty';
+                   }
+               }
+            },
+            
+        })
+    
+    </script>
+</body>
+</html> -->
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <div id='elzero-app'>
+        <h1>Welcome To Vue Course </h1>
+        <label>Write Uour Username:</label>
+        <input type="text" v-model="username">
+        <p>{{validateusername}}</p>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.6/dist/vue.js"></script>
+    <script>
+
+      var vm =  new Vue({
+            el:'#elzero-app',
+            data:{
+                username:''
+            },
+            methods: {
+               
+            },
+
+            computed: {
+                validateusername: function(){
+                    if(!this.username){
+                        return 'User Name Is Not Empty'
+                    }
+                    else if(this.username.length < 8){
+                        return 'User Name Is Too Short'
+                    }
+                }
+            },
+            
+        })
+    
+    </script>
+</body>
+</html> -->
+
+
+<!-- <!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <div id='elzero-app'>
+        <h1>Welcome To Vue Course </h1>
+        <label>Write Uour Username:</label>
+        <input type="text" v-model="username">
+        <p>{{validateusername}}</p>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.6/dist/vue.js"></script>
+    <script>
+
+      var vm =  new Vue({
+            el:'#elzero-app',
+            data:{
+                username:''
+            },
+            methods: {
+               
+            },
+
+            computed: {
+                validateusername: function(){
+                    if(!this.username){
+                        return 'User Name Is Not Empty'
+                    }
+                    else if(this.username.length < 8){
+                        return 'User Name Is Too Short';
+                    }
+                    else if(!isNaN(this.username)){ //isNaN هذه بتشيك على اليوزر إذا مش رقم 
+                        return 'User Name Cant By Namber Only'
+                    }
+                },
+            },
+            
+        })
+    
+    </script>
+</body>
+</html> -->
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <div id='elzero-app'>
+        <h1>Welcome To Vue Course </h1>
+        <label>Write Uour Username:</label>
+        <input type="text" v-model="username">
+        <p>{{validateusername()}}</p>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.6/dist/vue.js"></script>
+    <script>
+
+      var vm =  new Vue({
+            el:'#elzero-app',
+            data:{
+                username:''
+            },
+            methods: {
+
+            },
+
+            computed: {
+                validateusername: function(){
+                    if(!this.username){
+                        return 'User Name Is Not Empty'
+                    }
+                    else if(this.username.length < 8){
+                        return 'User Name Is Too Short';
+                    }
+                    else if(!isNaN(this.username)){
+                        return 'User Name Cant Be Number Only';
+                    }
+                    else{
+                        return ' Hello ' + this.username + 'Evrything Is Good';
+                    }
+                },
+            },
+            
+        })
+    
+    </script>
+</body>
+</html> -->
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <div id='elzero-app'>
+        <h1>Welcome To Vue Course </h1>
+        <label>Write Uour Username:</label>
+        <input type="text" v-model="username">
+        <p>{{validateusername()}}</p>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.6/dist/vue.js"></script>
+    <script>
+
+      var vm =  new Vue({
+            el:'#elzero-app',
+            data:{
+                username:''
+            },
+            methods: {
+                validateusername: function(){
+                    if(!this.username){
+                        return 'User Name Is Not Empty'
+                    }
+                    else if(this.username.length < 8){
+                        return 'User Name Is Too Short';
+                    }
+                    else if(!isNaN(this.username)){
+                        return 'User Name Cant Be Number Only';
+                    }
+                    else{
+                        return ' Hello ' + this.username + 'Evrything Is Good';
+                    }
+                },
+            },
+
+            computed: {
+               
+            },
+            
+        })
+    
+    </script>
+</body>
+</html> -->
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="elzero-app">
+      <h1>Welcome To Vue Course</h1>
+      <label>Write Uour Username:</label>
+      <input type="text" v-model="username" />
+      <p>{{validateusername()}}</p>
+      <p>{{age}}</p>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.6/dist/vue.js"></script>
+    <script>
+      var vm = new Vue({
+        el: "#elzero-app",
+        data: {
+          username: "",
+          age: 35
+        },
+        methods: {
+          validateusername: function() {
+            console.log("run");
+            if (!this.username) {
+              return "User Name Is Not Empty";
+            } else if (this.username.length < 8) {
+              return "User Name Is Too Short";
+            } else if (!isNaN(this.username)) {
+              return "User Name Cant Be Number Only";
+            } else {
+              return " Hello " + this.username + "Evrything Is Good";
+            }
+          }
+        },
+
+        computed: {}
+      });
+    </script>
+  </body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <div id='elzero-app'>
+        <h1>Welcome To Vue Course </h1>
+        <label>Write Uour Username:</label>
+        <input type="text" v-model="username">
+        <p>{{validateusername}}</p>
+        <p>{{age}}</p>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.6/dist/vue.js"></script>
+    <script>
+
+      var vm =  new Vue({
+            el:'#elzero-app',
+            data:{
+                username:'',
+                age:35
+            },
+            methods: {
+                
+            },
+
+            computed: {
+                validateusername: function(){
+                    console.log('run')
+                    if(!this.username){
+                        return 'User Name Is Not Empty'
+                    }
+                    else if(this.username.length < 8){
+                        return 'User Name Is Too Short';
+                    }
+                    else if(!isNaN(this.username)){
+                        return 'User Name Cant Be Number Only';
+                    }
+                    else{
+                        return ' Hello ' + this.username + 'Evrything Is Good';
+                    }
+                },
+            },
+            
+        })
+    
+    </script>
+</body>
+</html>
