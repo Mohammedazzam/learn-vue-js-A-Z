@@ -1,0 +1,251 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <div id='elzero-app'>
+        <p v-once>welcome {{name}}</p>
+
+        <a v-bind:href="imageUrl">
+          <img v-bind:src="imageSrc">
+        </a>
+    </div>
+
+    <script src="js/vue.js"></script>
+    <script>
+      var vm =  new Vue({
+            el:'#elzero-app',
+            data:{
+                name:'mohammed',
+                imageSrc:'imgs/1.jpg',
+                imagAlteText:'The AlterNet Text',
+                imageUrl:'https://www.google.com'
+            }
+
+        })
+    
+    </script>
+</body>
+</html> -->
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <div id='elzero-app'>
+        <p v-once>welcome {{name}}</p>
+
+        <a :href="imageUrl">
+          <img :src="imageSrc">
+        </a>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.6/dist/vue.js"></script>
+    <script>
+      var vm =  new Vue({
+            el:'#elzero-app',
+            data:{
+                name:'mohammed',
+                imageSrc:'imgs/1.jpg',
+                imagAlteText:'The AlterNet Text',
+                imageUrl:'https://www.google.com'
+            }
+
+        })
+    
+    </script>
+</body>
+</html> -->
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <div id='elzero-app'>
+        
+        <button v-on:click="counter ++">Increase Counter</button>
+
+        <p>counter is {{counter}}</p>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.6/dist/vue.js"></script>
+    <script>
+      var vm =  new Vue({
+            el:'#elzero-app',
+            data:{
+                name:'mohammed',
+                counter:0
+            }
+
+        })
+    
+    </script>
+</body>
+</html> -->
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <div id='elzero-app'>
+        
+        <button @click="counter ++">Increase Counter</button>
+
+        <p>counter is {{counter}}</p>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.6/dist/vue.js"></script>
+    <script>
+      var vm =  new Vue({
+            el:'#elzero-app',
+            data:{
+                name:'mohammed',
+                counter:0
+            }
+
+        })
+    
+    </script>
+</body>
+</html> -->
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <div id='elzero-app'>
+        
+        <button @click="counter +=2">Increase Counter</button>
+
+        <p>counter is {{counter}}</p>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.6/dist/vue.js"></script>
+    <script>
+      var vm =  new Vue({
+            el:'#elzero-app',
+            data:{
+                name:'mohammed',
+                counter:0
+            }
+
+        })
+    
+    </script>
+</body>
+</html> -->
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <div id='elzero-app'>
+        
+        <button @click.middle ="counter +=2">Increase Counter</button>
+
+        <p>counter is {{counter}}</p>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.6/dist/vue.js"></script>
+    <script>
+      var vm =  new Vue({
+            el:'#elzero-app',
+            data:{
+                name:'mohammed',
+                counter:0
+            }
+
+        })
+    
+    </script>
+</body>
+</html> -->
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <div id='elzero-app'>
+        
+        <button @click.left ="counter +=2">Increase Counter</button>
+
+        <p>counter is {{counter}}</p>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.6/dist/vue.js"></script>
+    <script>
+      var vm =  new Vue({
+            el:'#elzero-app',
+            data:{
+                name:'mohammed',
+                counter:0
+            }
+
+        })
+    
+    </script>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <div id='elzero-app'>
+        
+        <button @click.right ="counter +=2">Increase Counter</button>
+
+        <p>counter is {{counter}}</p>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.6/dist/vue.js"></script>
+    <script>
+      var vm =  new Vue({
+            el:'#elzero-app',
+            data:{
+                name:'mohammed',
+                counter:0
+            }
+
+        })
+    
+    </script>
+</body>
+</html>
