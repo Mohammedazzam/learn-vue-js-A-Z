@@ -1,0 +1,156 @@
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <div id='elzero-app'>
+        <h1>Welcome To Vue Course </h1>
+        <label>Egeption Pound</label>
+        <input type="text" v-model='eg'>
+
+        <label>Soudi Pound</label>
+        <input type="text" v-model='sar'>
+        
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.6/dist/vue.js"></script>
+    <script>
+
+      var vm =  new Vue({
+            el:'#elzero-app',
+            data:{
+                eg:0,
+                sar:0
+                
+            },
+            methods: {
+                
+            },
+
+            computed: {
+                
+            },
+            
+            watch: {
+                eg:function(v){
+                    this.sar = v/5
+                }
+                
+            },
+            
+        })
+    
+    </script>
+</body>
+</html> -->
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <div id='elzero-app'>
+        <h1>Welcome To Vue Course </h1>
+        <label>Egeption Pound</label>
+        <input type="text" v-model='eg'>
+
+        <label>Soudi Pound</label>
+        <input type="text" v-model='sar'>
+        
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.6/dist/vue.js"></script>
+    <script>
+
+      var vm =  new Vue({
+            el:'#elzero-app',
+            data:{
+                eg:0,
+                sar:0
+                
+            },
+            methods: {
+                
+            },
+
+            computed: {
+                
+            },
+            
+            watch: {
+                eg: function(v){
+                    this.sar = v / 5
+                },
+
+                sar: function(v){
+                    this.eg = v * 5
+                }
+            },
+            
+        })
+    
+    </script>
+</body>
+</html> -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <div id='elzero-app'>
+        <h1>Welcome To Vue Course </h1>
+        <label>Egeption Pound</label>
+        <input type="text" v-model='eg'>
+
+        <label>Soudi Pound</label>
+        <input type="text" v-model='sar'>
+        
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.6/dist/vue.js"></script>
+    <script>
+
+      var vm =  new Vue({
+            el:'#elzero-app',
+            data:{
+                eg:0,
+                sar:0
+                
+            },
+            methods: {
+                
+            },
+
+            computed: {
+                
+            },
+            
+            watch: {
+                eg: function(v){
+                    this.sar = v / 5
+                    console.log('sar run')
+                },
+
+                sar: function(v){
+                    this.eg = v * 5
+                    console.log('eg run')
+
+                }
+            },
+            
+        })
+    
+    </script>
+</body>
+</html>
