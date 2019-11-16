@@ -1,0 +1,304 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <div id='elzero-app'>
+            <app-count :source="source"></app-count>
+            <app-count></app-count>
+            <app-count></app-count>
+            <app-count></app-count>
+            <app-count></app-count>
+     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.6/dist/vue.js"></script>
+    <script>
+
+        Vue.component('app-count',{
+            data:function(){
+                return{
+                    name:'mohammed',
+                    count:0
+            }
+        },
+        props:['source'],
+        template:'<p @click="count++">Hello {{name}} You clicke for Paragraph {{count}} Times And source Is {{source}} </p>'
+        })
+
+      var vm =  new Vue({
+            el:'#elzero-app',
+            data:{
+                name:'Osama',
+                source:'Elzero Web School ',
+                
+            },
+        })
+    
+    </script>
+</body>
+</html> -->
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <div id='elzero-app'>
+            <app-count :source="source" :url="url"></app-count>
+            <app-count></app-count>
+            <app-count></app-count>
+            <app-count></app-count>
+            <app-count></app-count>
+     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.6/dist/vue.js"></script>
+    <script>
+
+        Vue.component('app-count',{
+            data:function(){
+                return{
+                    count:0
+            }
+        },
+        props:['source','url'],
+        template:'<p @click="count++">Hello {{name}} You clicke for Paragraph {{count}} Times And source Is {{source}} and URL Is {{url}} </p>'
+        })
+
+      var vm =  new Vue({
+            el:'#elzero-app',
+            data:{
+                name:'Osama',
+                source:'Elzero Web School ',
+                url:'https://www.google.com',
+                
+            },
+        })
+    
+    </script>
+</body>
+</html> -->
+
+
+
+<!---عملت فور لوب--->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <div id='elzero-app'>
+            <app-artical v-for="post in posts"></app-artical>
+     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.6/dist/vue.js"></script>
+    <script>
+
+        Vue.component('app-artical',{
+            data:function(){
+                return{
+                    count:0
+            }
+        },
+        template:'<p> test</p>'
+        })
+
+      var vm =  new Vue({
+            el:'#elzero-app',
+            data:{
+                posts:[
+                {id:1, auther:'osama', title:'artical number one'},
+                {id:2, auther:'mohammed', title:'artical number two'},
+                {id:3, auther:'Azzam', title:'artical number three'},
+                {id:4, auther:'ramy', title:'artical number four'},
+
+                ]
+            }
+        })
+    
+    </script>
+</body>
+</html> -->
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <div id='elzero-app'>
+            <app-artical v-for="post in posts"></app-artical>
+     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.6/dist/vue.js"></script>
+    <script>
+
+        Vue.component('app-artical',{
+            data:function(){
+                return{
+                    count:0
+            }
+        },
+        template:'<p> test</p>'
+        })
+
+      var vm =  new Vue({
+            el:'#elzero-app',
+            data:{
+                posts:[
+                {id:1, auther:'osama', title:'artical number one'},
+                {id:2, auther:'mohammed', title:'artical number two'},
+                {id:3, auther:'Azzam', title:'artical number three'},
+                {id:4, auther:'ramy', title:'artical number four'},
+                {id:5, auther:'teto', title:'artical number five'},
+
+                ]
+            }
+        })
+    
+    </script>
+</body>
+</html> -->
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <div id='elzero-app'>
+            <app-artical v-for="post in posts" :title="post.title"></app-artical>
+     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.6/dist/vue.js"></script>
+    <script>
+
+        Vue.component('app-artical',{
+            data:function(){
+                return{
+                    count:0
+            }
+        },
+        props:['title'],
+        template:'<p>Artical Title Is {{title}}</p>'
+        })
+
+      var vm =  new Vue({
+            el:'#elzero-app',
+            data:{
+                posts:[
+                {id:1, auther:'osama', title:'artical number one'},
+                {id:2, auther:'mohammed', title:'artical number two'},
+                {id:3, auther:'Azzam', title:'artical number three'},
+                {id:4, auther:'ramy', title:'artical number four'},
+                {id:5, auther:'teto', title:'artical number five'},
+
+                ]
+            }
+        })
+    
+    </script>
+</body>
+</html> -->
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <div id='elzero-app'>
+            <app-artical v-for="post in posts" :title="post.title" :auther="post.auther "></app-artical>
+     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.6/dist/vue.js"></script>
+    <script>
+
+        Vue.component('app-artical',{
+            data:function(){
+                return{
+                    count:0
+            }
+        },
+        props:['auther','title'],
+        template:'<p>Artical Title Is {{title}} And Written By {{auther}}</p>'
+        })
+
+      var vm =  new Vue({
+            el:'#elzero-app',
+            data:{
+                posts:[
+                {id:1, auther:'osama', title:'artical number one'},
+                {id:2, auther:'mohammed', title:'artical number two'},
+                {id:3, auther:'Azzam', title:'artical number three'},
+                {id:4, auther:'ramy', title:'artical number four'},
+                {id:5, auther:'teto', title:'artical number five'},
+
+                ]
+            }
+        })
+    
+    </script>
+</body>
+</html> -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <div id='elzero-app'>
+            <app-artical v-for="post in posts" :title="post.title" :auther="post.auther"  :id="post.id"></app-artical>
+     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.6/dist/vue.js"></script>
+    <script>
+
+        Vue.component('app-artical',{
+            data:function(){
+                return{
+                    count:0
+            }
+        },
+        props:['auther','title' , 'id'],
+        template:'<p>Artical Title Is {{title}} And Written By {{auther}} And ID {{id}}</p>'
+        })
+
+      var vm =  new Vue({
+            el:'#elzero-app',
+            data:{
+                posts:[
+                {id:1, auther:'osama', title:'artical number one'},
+                {id:2, auther:'mohammed', title:'artical number two'},
+                {id:3, auther:'Azzam', title:'artical number three'},
+                {id:4, auther:'ramy', title:'artical number four'},
+                {id:5, auther:'teto', title:'artical number five'},
+
+                ]
+            }
+        })
+    
+    </script>
+</body>
+</html>
